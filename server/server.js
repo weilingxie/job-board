@@ -11,6 +11,7 @@ const PORT = 9000;
 const JWT_SECRET = Buffer.from("Zn8Q5tyZ/G1MHltc4F/gTkVJMlrbKiZt", "base64");
 
 const app = express();
+
 app.use(
   cors(),
   express.json(),
@@ -30,6 +31,11 @@ app.post("/login", async (req, res) => {
   } else {
     res.sendStatus(401);
   }
+});
+
+app.use("/graphql", (req, res, next) => {
+  console.log("Request Body:", req.body.query);
+  next();
 });
 
 const typeDefs = await readFile("./schema.graphql", "utf8");
