@@ -41,6 +41,10 @@ export async function getCompanyById(id) {
         id
         name
         description
+        jobs {
+          id
+          title
+        }
       }
     }
   `;
