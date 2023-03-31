@@ -7,12 +7,12 @@ export const resolvers = {
   },
 
   Mutation: {
-    createJob: (_, { input }, { auth }) => {
-      console.log("[createJob] context:", auth);
-      if (!auth) {
+    createJob: (_, { input }, { user }) => {
+      console.log("[createJob] user:", user);
+      if (!user) {
         throw new Error("Unauthorized");
       }
-      return Job.create({ ...input });
+      return Job.create({ ...input, companyId: user.companyId });
     },
   },
 
