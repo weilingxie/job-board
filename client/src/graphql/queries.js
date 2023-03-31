@@ -51,3 +51,16 @@ export async function getCompanyById(id) {
   const variables = { id };
   return await request(url, query, variables);
 }
+
+export async function createJob(input) {
+  const query = gql`
+    mutation CreateJobMutation($input: CreateJobInput!) {
+      job: createJob(input: $input) {
+        id
+      }
+    }
+  `;
+  const variables = { input };
+  const { job } = await request(url, query, variables);
+  return job;
+}

@@ -16,5 +16,65 @@
     "companyId": "wvdB54Gqbdp_NZTXK9Tue",
     "title": "Full-Stack Developer",
     "description": "We are looking for a Full-Stack Developer familiar with Node.js, Express, and React."
+  },
+  {
+    "id": "AgJqlgEYMOVwFiYJY7xZa",
+    "title": "Product Manager",
+    "companyId": "pVbRRBQtMVw6lUAkj1k43",
+    "description": "Owner of a product"
+  },
+  {
+    "id": "dSR9J8HW1stqCvqqJTdJL",
+    "companyId": "wvdB54Gqbdp_NZTXK9Tue",
+    "title": "DevOps",
+    "description": "Maintain Azure Cloud Native platform"
+  },
+  {
+    "id": "kqA0N60Nnx1D1U8nYL8I0",
+    "title": "Data Analyst",
+    "companyId": "wvdB54Gqbdp_NZTXK9Tue",
+    "description": "Analyze data"
+  },
+  {
+    "id": "GiMyBK8hB9Zp6H5bnXzkJ",
+    "title": "Automation Tester",
+    "companyId": "wvdB54Gqbdp_NZTXK9Tue",
+    "description": "automation test"
+  },
+  {
+    "id": "vyNQDM2r9rm3z7Z1ZlGub",
+    "title": "Manual Tester",
+    "companyId": "wvdB54Gqbdp_NZTXK9Tue",
+    "description": "test manually"
+  },
+  {
+    "id": "KZP6q0DgFPIzL2UrOwltT",
+    "title": "Data Engineer",
+    "companyId": "wvdB54Gqbdp_NZTXK9Tue",
+    "description": "ETL"
+  },
+  {
+    "id": "OpDrvpMeKS_cDtmixvwtq",
+    "title": "Product Owner",
+    "companyId": "wvdB54Gqbdp_NZTXK9Tue",
+    "description": "Design a product"
+  },
+  {
+    "id": "HFCpl5unsiVZJpPz95cd9",
+    "title": "Project Manager",
+    "companyId": "wvdB54Gqbdp_NZTXK9Tue",
+    "description": "manage project"
+  },
+  {
+    "id": "RbcXkbfXg-maZS6z99QW7",
+    "title": "Project Manager",
+    "companyId": "wvdB54Gqbdp_NZTXK9Tue",
+    "description": "manage project"
+  },
+  {
+    "id": "8y3kiM-T_9GnJvCShb361",
+    "title": "Project Manager",
+    "companyId": "wvdB54Gqbdp_NZTXK9Tue",
+    "description": "manage project"
   }
 ]
