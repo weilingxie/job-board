@@ -7,9 +7,9 @@ function CompanyDetail() {
   const { companyId } = useParams();
   const [company, setCompany] = useState();
   useEffect(() => {
-    getCompanyById(companyId).then((result) => {
-      console.log(result);
-      setCompany(result.company);
+    getCompanyById(companyId).then((company) => {
+      console.log(company);
+      setCompany(company);
     });
   }, [companyId]);
 

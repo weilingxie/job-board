@@ -14,6 +14,7 @@ export const resolvers = {
       }
       return Job.create({ ...input, companyId: user.companyId });
     },
+    
   },
 
   Job: {
