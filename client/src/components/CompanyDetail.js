@@ -5,13 +5,6 @@ import { useCompany } from "../graphql/hooks";
 function CompanyDetail() {
   const { companyId } = useParams();
   const { company, loading, error } = useCompany(companyId);
-  // const [company, setCompany] = useState();
-  // useEffect(() => {
-  //   getCompanyById(companyId).then((company) => {
-  //     console.log(company);
-  //     setCompany(company);
-  //   });
-  // }, [companyId]);
 
   if (loading) return <p>Loading...</p>;
 
