@@ -1,23 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import JobList from "./JobList";
-import { getJobs } from "../graphql/queries";
+import { useJobs } from "../graphql/hooks";
 
 function JobBoard() {
-  const [jobs, setJobs] = useState([]);
-  const [error, setError] = useState(false);
-  useEffect(() => {
-    async function getJobList() {
-      const jobs = await getJobs();
-      setJobs(jobs);
-    }
+  const { jobs, loading, error } = useJobs();
 
-    try {
-      getJobList();
-    } catch (error) {
-      console.error(error);
-      setError(true);
-    }
-  }, []);
+  if (loading) return <p>Loading...</p>;
 
   if (error) return <p>Something went wrong</p>;
 
